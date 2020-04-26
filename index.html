@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link href="https://fonts.googleapis.com/css?family=Noto+Sans+JP&display=swap" rel="stylesheet">
+    <title>どう森風富山市紹介サイト</title>
+  </head>
+  <style>
+    body {
+      display: block;
+      margin: 0px;
+      font-family: 'Noto Sans JP', sans-serif;
+      background: #ebab64;
+    }
+    header {
+      background: url(toyamasi.png);
+      width: 100%;
+      background-repeat: repeat;
+      background-position: 50% 64%;
+      background-size: 100% auto;
+    }
+    header img {
+      width: 35%;
+      margin: 0 auto;
+      display: block;
+    }
+    ul {
+      margin: 0;
+    }
+    section.bg0 {
+      width: 100%;
+      background-image: url(bg0.png);
+      background-repeat: repeat;
+      background-position: 50% 100%;
+      background-size: 41% auto;
+    }
+    .cards {
+      overflow-x: auto;
+      white-space: nowrap;
+      -webkit-overflow-scrolling: touch;
+      padding: 2rem 2px;
+    }
+    .card {
+      display: inline-block;
+      width: calc(95vw/3);
+      background-color: #fff;
+      box-shadow: 5px 5px 0px 0px rgba(0, 0, 0, 0.1);
+      padding: 2rem;
+      cursor: pointer;
+      margin: 5px;
+      border-radius: 14px;
+    }
+    li.card img {
+      width: 100%;
+      height: calc(100vw/4);
+      object-fit: cover;
+      border-radius: 14px;
+    }
+    li.card p {
+      color: #827157;
+      font-weight: bold;
+      text-align: center;
+      display: block;
+      font-size: 12px;
+      width: calc(95vw/3);
+    }
+    .button {
+      padding: 2em 0;
+    }
+    .button img {
+      width: 60%;
+      display: block;
+      margin: 0 auto;
+    }
+    .bg1 {
+      width: 100%;
+      background-image: url(bg1.png);
+      background-repeat: repeat;
+      background-position: 50% 100%;
+      background-size: 41% auto;
+    }
+    section.bg1 img {
+      width: 100%;
+    }
+    footer{
+      background:#ebab64;
+      width:100%;
+    }
+    footer p {
+      color: #fff;
+      font-size: 12px;
+      text-align: center;
+      font-weight: bold;
+    }
+    ::-webkit-scrollbar {
+    width: 10px;
+}
+    ::-webkit-scrollbar-thumb {
+        border-radius: 30px;
+            background: #6fb789;
+    }
+    ::-webkit-scrollbar-track {
+        border-radius: 30px;
+        background: rgb(136, 202, 162);
+    }
+    ::selection {
+        color: rgb(255, 255, 255);
+        background: rgb(235, 171, 100);
+    }
+    a {
+      color: #fff;
+    }
+    @media screen and (min-width: 1000px) {
+      section.bg1 img,.button img{
+        width:35% !important;
+        margin: 0 auto;
+        display: block;
+}
+      }
+      .card,li.card img{
+        height: calc(95vw/5);
+        width: calc(95vw/5);
+      }
+      li.card p {
+        margin: 4px 0px;
+        width: calc(95vw/5);
+      }
+      ul.cards {
+        padding: 62px 7em;
+      }
+    }
+  </style>
+  <header>
+    <img src="logo.png" alt="">
+  </header>
+  <body>
+    <section class="bg0">
+      <ul class="cards">
+        <li class="card">
+          <img src="item0.jpg" alt="">
+          <p>富山ブラックラーメン</p>
+        </li>
+        <li class="card">
+          <img src="item1.jpg" alt="">
+          <p>ますの寿司</p>
+        </li>
+        <li class="card">
+          <img src="item2.jpg" alt="">
+          <p>玉天</p>
+        </li>
+        <li class="card">
+          <img src="item3.jpg" alt="">
+          <p>白エビ</p>
+        </li>
+        <li class="card">
+          <img src="item4.jpg" alt="">
+          <p>世界一美しいスタバ</p>
+        </li>
+        <li class="card">
+          <img src="item5.jpg" alt="">
+          <p>かまぼこ</p>
+        </li>
+      </ul>
+      <div class="button">
+        <a href="https://www.city.toyama.toyama.jp/"><img src="check.png" alt=""></a>
+      </div>
+    </section>
+    <section class="bg1">
+      <img src="annai.png" alt="">
+      <img src="kitokito.png" alt="">
+    </section>
+  <footer>
+    <p>作成者:<a href="https://twitter.com/mizumii3">みずみ(@mizumii3)</a></p>
+    <p>WEBデザインの学習のためあつ森公式サイトを参考にして作成しました。</p>
+  </footer>
+  </body>
+</html>
